@@ -46,6 +46,17 @@
         card.removeEventListener("transitionend", setCard);
     }
     
+    window.addEventListener("keyup", function(e){
+        //fを押すと
+        if(e.keyCode === 70){
+            flip();
+        }
+        //nを押すと
+        if(e.keyCode === 78){
+            next();
+        }
+    });
+    
     setCard();
     
 })();
